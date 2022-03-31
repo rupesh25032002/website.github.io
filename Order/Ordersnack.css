@@ -1,0 +1,172 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+#formcontainer{
+margin-top: 1rem;
+}
+#formid{
+  display: grid;
+    margin-top: 1vw;
+    border: 1px solid grey;
+    background-color: black;
+    color: white;
+    border-radius: 2vw;
+    grid-template-columns: 1fr 1fr;
+    width: 31vw;
+    height: 25vw;
+    margin: auto;
+    grid-template-rows: 15%;
+    gap: 10%;
+    grid-template-areas:
+        "box1 box1"
+        "box2 box2"
+        "box3 box4"
+        "box5 box5";
+}
+.box{
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: system-ui;
+}
+#box1{
+  grid-area: box1;
+  text-align: center;
+  font-size: 1.8vw;
+  color: pink;
+}
+#box2{
+  grid-area: box2;
+  
+}
+#box3{
+  grid-area: box3;
+  position: relative;
+  bottom: 30%;
+
+}
+#box4{
+  grid-area: box4;
+  position: relative;
+  bottom: 30%;
+}
+#box5{
+  grid-area: box5;
+}
+.inp{
+  width: 70%;
+  height: 40%;
+  border: 1px solid white;
+  border-radius: 1vw;
+  text-align: center;
+    font-size: 1.5vw;
+    font-family: monospace;
+
+}
+.labelname{
+  font-size: 1.8vw;
+}
+#quantity{
+  width:40% ;
+}
+#order{
+  width: 40%;
+  height: 80%;
+  border-radius: .8vw;
+  font-weight: bold;
+}
+
+table{
+  border-top: 2px solid;
+  margin:2% auto 0 auto;
+  font-size: 1.5vw;
+  border-collapse: collapse;
+  width: 50vw;
+  font-family: system-ui;
+}
+th{
+  font-weight: bold;
+  border-bottom: 1px solid;
+  padding: .5vw;
+}
+td{
+  font-weight: unset;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  padding: .5vw;
+}
+
+@media (min-width:700px) and (max-width:1000px){
+  #formid{
+    width: 37vw;
+    height: 30vw;
+  }
+  #formcontainer{
+    margin-top: 5rem;
+    }
+  table{
+    margin: 9% auto 0 auto;
+    width: 70vw;
+    font-size: 2vw;
+  }
+
+  
+}
+@media (min-width:400px) and (max-width:700px){
+  #formid{
+    width: 54vw;
+    height: 41vw;
+}
+  #box1{
+    font-size: 3vw;
+  }
+  .labelname{
+    font-size: 3vw;
+  }
+  #formcontainer{
+    margin-top: 5rem;
+    }
+  table{
+    margin: 8% auto 0 auto;
+    width: 70%;
+    font-size: 2.5vw;
+  }
+  .inp{
+   
+      font-size: 2.5vw;
+  }
+
+  
+}
+@media (min-width:200px) and (max-width:400px){
+  #formid{
+    width: 69vw;
+    height: 59vw;
+}
+  #box1{
+    font-size: 4vw;
+  }
+  .labelname{
+    font-size: 3vw;
+  }
+  #formcontainer{
+    margin-top: 7rem
+    }
+  table{
+    margin: 12% auto 0 auto;
+    width: 83%;
+    font-size: 3.5vw;
+  }
+  .inp{
+   font-size: 3.5vw;
+  
+  }
+
+  
+}

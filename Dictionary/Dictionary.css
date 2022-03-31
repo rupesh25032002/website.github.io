@@ -1,0 +1,256 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 63.5%;
+}
+body{
+  background-color: indigo;
+}
+
+#dictcontainer{
+  width: 35vw;
+  height: 13vw;
+  /* border: 2px solid red; */
+  margin: auto;
+  margin-top: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#heading{
+  text-align: center;
+    font-family: sans-serif;
+    font-size: 2.5vw;
+    /* margin-top: 1vw; */
+    position: relative;
+    top: 1vw;
+    height: 3vw;
+    box-sizing: border-box;
+    color: wheat;
+}
+#searchbox{
+  border: 1px solid;
+    border-radius: 2vw;
+    width: 80%;
+    height: 3vw;
+    margin: 0 auto 0 auto;
+    position: relative;
+    bottom: 3vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+#searchbar{
+  outline: 0;
+  border-width: 0px;
+  width: 80%;
+  border-radius: 3vw;
+  padding-left: 2.3rem;
+  font-size: 1.5vw;
+  font-family: sans-serif;
+}
+#logobody{
+  border: 1px solid;
+    border-radius: 50%;
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    width: 9%;
+    justify-content: space-around;
+    background-color: indigo;
+}
+
+
+#searchlogo{
+width: 58%;
+}
+
+#secondcontainer{
+  width: 63vw;
+    min-height: 16vw;
+    border: 1px solid;
+    margin: auto;
+    margin-top: 3vw;
+    display: none;
+    flex-direction: column;
+    /* align-items: baseline; */
+    justify-content: space-around;
+    border-radius: 2rem;
+    background-color: gold;
+}
+#wordbody{
+  border: 0.1rem solid;
+  margin: 0px auto;
+  width: 85%;
+  min-height: 4vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  background-color: wheat;
+}
+#word{
+  
+  margin-left: 3%;
+  align-self: center;
+  font-family: cursive;
+  font-size: 2vw;
+}
+#voicediv{
+  display: flex;
+    align-items: center;
+    margin-right: 1%;
+    height: 3vw;
+    align-self: center;
+}
+
+#voicelogo{
+  height: 67%;
+}
+
+#meaningcontainer{
+  border: 0.1rem solid;
+    width: 70%;
+    margin: 0 auto 0 auto;
+    width: 85%;
+    min-height: 5vw;
+    background-color: wheat;
+    overflow: auto;
+  
+}
+#meaning{
+  font-size: 2vw;
+  font-family: monospace;
+  margin-left: 1.3rem;
+}
+#meaningvalue{
+  font-size: 1.3vw;
+    font-family: cursive;
+    position: relative;
+    top: 1.5rem;
+    margin-left: 1.3rem;
+    
+}
+
+@media (min-width:900px) and (max-width:1200px) {
+  #dictcontainer{
+    width: 49vw;
+    height: 16vw;
+    /* border: 1px solid; */
+  }
+  #heading{
+    font-size: 3.5vw;
+  }
+  #searchbox{
+    height: 4vw;
+    bottom: 2vw
+  }
+  #searchbar{
+    font-size: 2vw;
+  }
+  #secondcontainer{
+    width: 72vw;
+    min-height: 22vw;
+    margin-top: 11vw;
+  }
+  #wordbody{
+    min-height: 5vw;
+  }
+  #meaningcontainer{
+    min-height: 7vw
+  }
+  #meaning{
+    font-size: 3vw;
+  }
+  #voicediv{
+    height: 5vw
+  }
+}
+@media (min-width:500px) and (max-width:900px) {
+ 
+  #dictcontainer{
+    width: 74vw;
+    height: 22vw;
+    margin-top: 6vw;
+    /* border: 1px solid; */
+  }
+  #heading{
+    font-size: 6vw;
+  }
+  #searchbox{
+    height: 6vw;
+    bottom: 2vw;
+    border-radius: 2.5rem;
+  }
+  #searchbar{
+    font-size: 4vw;
+  }
+  #secondcontainer{
+    width: 76vw;
+    min-height: 35vw;
+    margin-top: 7vw;
+  }
+  #wordbody{
+    min-height: 9vw
+  }
+  #word{
+    font-size: 4vw;
+  }
+  #meaningcontainer{
+    min-height: 15vw;
+  }
+  #meaning{
+    font-size: 5vw;
+  }
+  #meaningvalue{
+    font-size: 2.5vw;
+  }
+  #voicediv{
+    height: 7vw
+  }
+}
+
+@media (max-width:500px) {
+  #dictcontainer{
+    width: 84vw;
+    height: 29vw;
+    position: relative;
+    top: 19vw;
+    /* border: 1px solid; */
+  }
+  #heading{
+    font-size: 6.5vw;
+  }
+  #searchbox{
+    height: 7vw;
+    bottom: 5vw;
+    border-radius: 4vw;
+  }
+  #searchbar{
+    font-size: 4vw;
+  }
+  #secondcontainer{
+    width: 77vw;
+    min-height: 57vw;
+    margin-top: 29vw;
+  }
+  #wordbody{
+    min-height: 10vw;
+  }
+  #word{
+    font-size: 5vw;
+  }
+  #meaningcontainer{
+    min-height: 18vw
+  }
+  #meaning{
+    font-size: 5vw;
+  }
+  #meaningvalue{
+    font-size: 2.5vw;
+  }
+  #voicediv{
+    height: 10vw;
+  }
+}

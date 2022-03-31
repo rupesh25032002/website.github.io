@@ -1,0 +1,138 @@
+body{
+  background-color: navy;
+}
+#stopclock{
+  height: 28vw;
+    width: 70vw;
+    /* border: 2px solid black; */
+    position: relative;
+    top: 6vw;
+   margin: auto;
+    /* font-size: 11vw; */
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:slateblue;
+}
+
+.box{
+  width: 18vw;
+  height: 17vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+#d1,#b1,#c1{
+  height: 11vw;
+    width: 16vw;
+    border: 1px solid #FF1493;
+    font-size: 10vw;
+    border-radius: 2vw;
+}
+
+#d2,#b2,#c2{
+  height: 3vw;
+  width: 16vw;
+  /* border: 1px solid violet; */
+  background-color: #1E90FF;
+}
+
+#hour2,#min2,#sec2{
+  display: inline-block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2vw;
+    font-family: monospace;
+}
+
+#b1,#c1{
+  background-color: #FF1493;
+}
+#d1{
+  background-color: #00BFFF;
+  border: 2px solid #00BFFF;
+}
+
+/* button css */
+#allbtn{
+  background-color: slategray;
+    border: 2px solid black;
+    border-radius: 4vw;
+    position: relative;
+    top: 11vw;
+    width: 67vw;
+    margin: auto;
+    display: flex;
+    height: 7vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+#btn1,#btn2,#btn3{
+  width: 15vw;
+    height: 4vw;
+    border: 2px solid;
+    font-size: 2vw;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+@media  (max-width:800px) and (min-width:400px) {
+  #allbtn{
+   top:50vw;
+}
+#stopclock{
+  top: 40vw;
+  width: 90vw;
+}
+.box{
+  width: 20vw;
+  height: 20vw;
+  /* border: 2px solid; */
+}
+#d1,#b1,#c1{
+  height: 11vw;
+    width: 18vw;
+    font-size: 10vw;
+    border-radius: 1vw;
+}
+#hour2,#min2,#sec2{
+  
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+}
+@media  (max-width:400px){
+  #allbtn{
+    top:80vw;
+ }
+  #stopclock{
+    top: 71vw;
+    width: 90vw;
+  }
+  .box{
+    width: 25vw;
+    height: 21vw;
+    /* border: 2px solid; */
+  }
+  #d1,#b1,#c1{
+    height: 13vw;
+    width: 19vw;
+    font-size: 12vw;
+    border-radius: 2vw
+  }
+  #hour2,#min2,#sec2{
+  
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+}
+
